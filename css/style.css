@@ -1,0 +1,779 @@
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#fffafc;
+}
+
+header{
+    background:#ff69b4;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+nav{
+    margin-top:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+.hero{
+    text-align:center;
+    padding:40px;
+}
+
+.hero img{
+    width:80%;
+    max-width:700px;
+    border-radius:15px;
+}
+
+.hero h2{
+    color:#ff1493;
+}
+
+button{
+    background:#ff69b4;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#ff1493;
+}
+header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:#ff69b4;
+
+    padding:20px 50px;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+}
+
+header h1{
+    color:white;
+    margin:0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#ffe4ec;
+}
+.services{
+    padding:60px;
+    text-align:center;
+}
+
+.service-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:280px;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    overflow:hidden;
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h3{
+    margin-top:15px;
+}
+
+.card p{
+    padding:15px;
+}
+.why-us{
+    padding:60px;
+    text-align:center;
+    background:#fff5f8;
+}
+
+.features{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.feature{
+    width:250px;
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 3px 8px rgba(0,0,0,.15);
+}
+.reviews{
+    padding:60px;
+    text-align:center;
+}
+
+.review-container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.review-card{
+    width:300px;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.review-card h4{
+    margin-top:15px;
+    color:#ff69b4;
+}
+footer{
+    background:#ff69b4;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:50px;
+}
+.booking{
+    width:60%;
+    margin:50px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.booking h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.booking form{
+    display:flex;
+    flex-direction:column;
+}
+
+.booking label{
+    margin-top:15px;
+    font-weight:bold;
+}
+
+.booking input,
+.booking select{
+    padding:12px;
+    margin-top:8px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+.booking button{
+    margin-top:30px;
+}
+.booking textarea{
+    padding:12px;
+    border-radius:8px;
+    margin-top:8px;
+    height:120px;
+}
+.payment{
+    width:60%;
+    margin:50px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.payment h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.payment form{
+    display:flex;
+    flex-direction:column;
+}
+
+.payment label{
+    margin-top:15px;
+    font-weight:bold;
+}
+
+.payment input{
+    padding:12px;
+    margin-top:8px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+.payment button{
+    margin-top:30px;
+}
+.about,
+.mission,
+.vision{
+    width:80%;
+    margin:40px auto;
+    text-align:center;
+}
+
+.about img{
+    width:70%;
+    max-width:700px;
+    border-radius:15px;
+    margin-top:20px;
+}
+.services-page{
+    padding:50px;
+    text-align:center;
+}
+
+.service-grid{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.service-card{
+    width:320px;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 4px 12px rgba(0,0,0,.2);
+    transition:0.3s;
+}
+
+.service-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.service-card h3{
+    margin-top:15px;
+}
+
+.service-card p{
+    padding:0 15px;
+}
+
+.service-card h4{
+    color:#ff1493;
+}
+
+.service-card button{
+    margin-bottom:20px;
+}
+.service-card:hover{
+    transform:translateY(-10px);
+}
+.gallery{
+    padding:60px;
+    text-align:center;
+}
+
+.gallery-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    width:90%;
+    margin:auto;
+}
+
+.gallery-container img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.gallery-container img:hover{
+    transform:scale(1.05);
+}
+.contact{
+    width:80%;
+    margin:50px auto;
+    text-align:center;
+}
+
+.contact-info{
+    margin-bottom:30px;
+}
+
+.contact form{
+    display:flex;
+    flex-direction:column;
+    width:60%;
+    margin:auto;
+}
+
+.contact input,
+.contact textarea{
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.contact button{
+    margin-top:15px;
+}
+/* Login Page */
+
+.auth-body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#fff5f8;
+}
+
+.login-card{
+    width:400px;
+    background:white;
+    padding:40px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.login-card h2{
+    margin-bottom:10px;
+}
+
+.login-card p{
+    color:#666;
+}
+
+.login-card input{
+    width:100%;
+    padding:12px;
+    margin:12px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+    box-sizing:border-box;
+}
+
+.login-card button{
+    width:100%;
+    padding:12px;
+    margin-top:15px;
+}
+
+.login-card a{
+    text-decoration:none;
+    color:#ff1493;
+    font-weight:bold;
+}
+.dashboard{
+
+padding:50px;
+text-align:center;
+
+}
+
+.dashboard-container{
+
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+
+}
+
+.dashboard-card{
+
+width:250px;
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+
+}
+
+.dashboard-card h3{
+
+color:#ff1493;
+
+}
+
+.dashboard-card p{
+
+font-size:30px;
+font-weight:bold;
+
+}
+/* ===========================
+   Back To Top Button
+=========================== */
+
+#topBtn{
+
+    display:none;
+    position:fixed;
+    bottom:30px;
+    right:30px;
+    background:#ff1493;
+    color:white;
+    border:none;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    cursor:pointer;
+    font-size:22px;
+    transition:.3s;
+
+}
+
+#topBtn:hover{
+
+    background:#ff69b4;
+}
+
+/* ===========================
+   Buttons Animation
+=========================== */
+
+button{
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* ===========================
+   Cards Animation
+=========================== */
+
+.card,
+.service-card,
+.dashboard-card,
+.review-card{
+
+    transition:.3s;
+
+}
+
+.card:hover,
+.service-card:hover,
+.dashboard-card:hover,
+.review-card:hover{
+
+    transform:translateY(-10px);
+
+}
+/* My Bookings */
+
+.bookings{
+
+width:90%;
+
+margin:50px auto;
+
+text-align:center;
+
+}
+
+table{
+
+width:100%;
+
+border-collapse:collapse;
+
+background:white;
+
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+
+}
+
+th{
+
+background:#ff69b4;
+
+color:white;
+
+padding:15px;
+
+}
+
+td{
+
+padding:15px;
+
+border-bottom:1px solid #ddd;
+
+}
+
+tr:hover{
+
+background:#fff0f5;
+
+}
+/* FAQ Section */
+
+.faq{
+
+    width:80%;
+    margin:70px auto;
+
+}
+
+.faq h2{
+
+    text-align:center;
+    margin-bottom:40px;
+
+}
+
+.faq-item{
+
+    background:white;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:12px;
+    box-shadow:0 5px 10px rgba(0,0,0,.15);
+
+}
+
+.faq-item h3{
+
+    color:#ff1493;
+
+}
+
+.faq-item p{
+
+    margin-top:10px;
+    color:#555;
+
+}
+.newsletter{
+
+background:#ff69b4;
+
+padding:50px;
+
+text-align:center;
+
+color:white;
+
+}
+
+.newsletter input{
+
+padding:12px;
+
+width:300px;
+
+border:none;
+
+border-radius:8px;
+
+margin-top:20px;
+
+}
+
+.newsletter button{
+
+margin-left:10px;
+
+padding:12px 25px;
+
+background:white;
+
+color:#ff1493;
+
+border:none;
+
+border-radius:8px;
+
+cursor:pointer;
+
+}
+/* Google Map */
+
+.map{
+
+width:100%;
+
+margin-top:40px;
+
+border-radius:15px;
+
+overflow:hidden;
+
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+
+}
+.social-icons{
+
+margin:30px 0;
+
+}
+
+.social-icons a{
+
+text-decoration:none;
+
+margin:15px;
+
+font-size:20px;
+
+color:#ff1493;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+.social-icons a:hover{
+
+color:#ff69b4;
+
+}
+.logo{
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+}
+
+.logo img{
+
+width:60px;
+
+height:60px;
+
+border-radius:50%;
+
+}
+#welcomeUser {
+    position: absolute;
+    left: 30px;
+    top: 25px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.user-welcome {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+#userNameDisplay {
+    color: #d87093; /* لون أزرق/وردي متناسق مع اسم المستخدم */
+    margin-left: 5px;
+}
+.brand-container {
+    display: flex;
+    flex-direction: column; /* يرتب العناصر رأسياً تحت بعضها */
+    align-items: flex-start; /* يحاذي النص إلى البداية */
+}
+
+.logo {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.user-welcome {
+    font-size: 14px;
+    color: #666;
+    margin-top: 4px; /* المسافة بين العنوان واسم الترحيب */
+    font-style: italic;
+}
+
+#userNameDisplay {
+    color: #d87093; /* لون اسم المستخدم */
+    font-weight: bold;
+    font-style: normal;
+}
+/* Welcome Card Bottom Left Styling */
+.welcome-card {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    background-color: #ff69b4; /* لون كحلي أنيق نفس الصورة */
+    color: #ffffff;
+    padding: 16px 24px;
+    border-radius: 16px; /* حواف دائرية */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    z-index: 9999; /* لضمان ظهور البطاقة فوق باقي العناصر */
+    font-family: Arial, sans-serif;
+    min-width: 200px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.welcome-title {
+    font-size: 13px;
+    color: #cbd5e1; /* لون رمادي فاتح للعنوان العلوي */
+    margin-bottom: 4px;
+}
+
+.welcome-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#userNameDisplay {
+    color: #ffffff;
+}

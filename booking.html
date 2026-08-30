@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- مكتبة الخريطة Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+
+<body>
+
+<header>
+    <h1>Caravan Beauty Salon</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="booking.html">Booking</a>
+        <a href="mybookings.html">My Bookings</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="booking">
+
+    <h2>Book Your Appointment</h2>
+
+    <form id="bookingForm">
+
+        <label>Full Name</label>
+        <input type="text" id="fullName" placeholder="Enter your full name" required>
+
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label>Phone Number</label>
+        <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+        <label>Select Service</label>
+        <select id="service" onchange="updatePrice()">
+            <option value="15">Hair Styling</option>
+            <option value="25">Makeup</option>
+            <option value="10">Nail Care</option>
+            <option value="18">Skin Care</option>
+            <option value="12">Henna</option>
+            <option value="5">Eyebrow Threading</option>
+        </select>
+
+        <label>Select Beautician</label>
+        <select id="beautician">
+            <option>Sarah</option>
+            <option>Fatima</option>
+            <option>Aisha</option>
+        </select>
+
+        <label>Service Price</label>
+        <input type="text" id="price" value="OMR 15" readonly>
+
+        <label>Select Date</label>
+        <input type="date" id="bookingDate" required>
+
+        <label>Select Time</label>
+        <input type="time" id="bookingTime" required>
+
+        <!-- قسم تحديد الموقع والخريطة -->
+        <label><strong>Select Your Location on Map:</strong></label>
+        <p style="font-size: 12px; color: #666; margin-top: -5px;">Click on the map to place a marker at your location.</p>
+        
+        <div id="map" style="height: 250px; width: 100%; border-radius: 8px; margin-bottom: 15px;"></div>
+
+        <input type="hidden" id="latitude">
+        <input type="hidden" id="longitude">
+
+        <label>Detailed Address / Residence Notes</label>
+        <input type="text" id="addressNotes" placeholder="e.g. Muscat, Seeb, House No. 12" required>
+
+        <label>Additional Notes</label>
+        <textarea id="notes" placeholder="Write any special requests..."></textarea>
+
+        <button type="submit">Continue to Payment</button>
+
+    </form>
+
+</section>
+
+<!-- مكتبة الخريطة Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<!-- الجافاسكربت الخاص بمشروعك -->
+<script src="../js/script.js"></script>
+
+</body>
+</html>
